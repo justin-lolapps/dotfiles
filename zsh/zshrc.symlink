@@ -2,7 +2,11 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Development
+if [[ -a ~/www ]] then;
+    export PROJECTS=~/www
+elif [[ -a ~/repos ]] then;
+    export PROJECTS=~/repos
+fi
 
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
