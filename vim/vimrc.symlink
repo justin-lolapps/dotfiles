@@ -4,7 +4,11 @@ set noswapfile
 "  Text Formatting
 " ----------------------------------------------------------------------------
 
+" syntax
 syntax on
+filetype plugin on
+
+" whitespace
 set autoindent
 set smartindent
 set nowrap
@@ -13,9 +17,9 @@ set shiftwidth=4
 set expandtab
 set nosmarttab
 
-" ----------------------------------------------------------------------------
-"  Code
-" ----------------------------------------------------------------------------
+" colors
+set t_Co=16
+colorscheme solarized
 
 " folding
 set fdm=marker
