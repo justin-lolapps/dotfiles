@@ -16,6 +16,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nosmarttab
+" fix comment indenting in Python
+inoremap # X<BS>#
 
 " colors
 set t_Co=16
