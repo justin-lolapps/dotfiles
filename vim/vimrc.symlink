@@ -4,6 +4,9 @@ set noswapfile
 "  Text Formatting
 " ----------------------------------------------------------------------------
 
+" Pathogen
+execute pathogen#infect()
+
 " syntax
 syntax on
 filetype plugin on
