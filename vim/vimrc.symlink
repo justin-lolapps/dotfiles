@@ -1,11 +1,20 @@
 set noswapfile
 
+" Pathogen
+execute pathogen#infect()
+
+" ----------------------------------------------------------------------------
+"  Plugins
+" ----------------------------------------------------------------------------
+" don't let vim-go steal <C-T>
+let g:go_def_mapping_enabled=0
+
+" better handling of opener followed by <CR>
+let delimitMate_expand_cr=1
+
 " ----------------------------------------------------------------------------
 "  Text Formatting
 " ----------------------------------------------------------------------------
-
-" Pathogen
-execute pathogen#infect()
 
 " syntax
 syntax on
